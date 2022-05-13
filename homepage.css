@@ -1,1 +1,59 @@
-/* Buon lavoro /*
+body{
+    background-color: black;
+}
+
+footer{
+    display: block;
+    color: grey;
+    background-color: inherit;
+    width: 100%;
+    height: vh;
+}
+
+footer > div.div-che-flexa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+div.div-che-flexa > ul{
+    background-color: yellow;
+    display: flex;
+    justify-content:flex-start; 
+    flex-direction: column;
+    width:980px;
+    height: 20vh;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+div.div-che-flexa > ul > li{
+    display: list-item;
+    width: 130px;
+    height: 35px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    list-style: none;
+}
+div.lang-select{
+    padding: 5px;
+border: 2px solid grey;
+display: flex;
+justify-content: space-between;
+background-color: black;
+height: 10%;
+width: 7%;
+}
+img[src="assets/mondo-selezione-lingua.jpg"]{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+}
+select{
+ text-decoration: none;
+}
