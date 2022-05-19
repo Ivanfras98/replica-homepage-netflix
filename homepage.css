@@ -164,6 +164,10 @@ div.lang-select {
   background-color: var(--red-color);
   width: 170px;
   font-weight: bolder;
+  font-size: large;
+  position: relative;
+  top: 1px;
+  right: 1px;
 }
 .plus {
   display: inline-block;
