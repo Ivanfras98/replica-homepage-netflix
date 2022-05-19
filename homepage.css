@@ -1,75 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: black;
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
 }
 
-footer{
-    display: block;
-    color: grey;
-    background-color: inherit;
-    width: 100%;
-    height: 40%;
+/* Footer section */
+
+footer {
+  display: block;
+  color: grey;
+  background-color: inherit;
+  width: 100%;
+  height: 40%;
 }
 
-.footer-panel{
-    letter-spacing: 0;
-    display: block;
-    margin:20px auto 0;
-    padding:0 4%;
-    max-width: 960px;
+.footer-panel {
+  letter-spacing: 0;
+  margin: 20px auto 0;
+  padding: 0 4%;
+  max-width: 60%;
 }
 
-.footer-panel p{
-    padding:15px 0;
+.footer-panel p {
+  padding: 15px 0;
 }
 
-.footer-links{
-    margin: 10px 0;
-    display: flex;
-    justify-content:flex-start; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
+.footer-links {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.footer-links li {
+  flex-basis: 25%;
+  display: list-item;
+  min-width: 150px;
+  margin-bottom: 16px;
+  list-style: none;
+  list-style-position: inside;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 0;
+}
+div.lang-select {
+  margin-bottom: 10px;
+  position: relative;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5%;
+  background-color: black;
+  height: 30px;
+  width: 100px;
+}
+.lang-select i {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.lang-select select {
+  position: absolute;
+  color: grey;
+  border: none;
+  background: black;
+  text-decoration: none;
+  top: 25%;
+  left: 35%;
+}
 
-}
-.footer-links li{
-    flex-basis: 25%;
-    display: list-item;
-    min-width: 150px;
-    margin-bottom: 16px;
-    list-style: none;
-    list-style-position:inside;
-    box-sizing: border-box;
-    text-align: left;
-    padding:0;
-}
-div.lang-select{
-    padding: 10px;
-    margin-bottom: 10px;
-    position:relative;
-padding: 5px;
-border: 1px solid grey;
-border-radius: 5%;
-background-color: black;
-height: 30px;
-width: 100px;
-}
-.lang-select i{
-    position:absolute;
-    top:25%;
-    left:10%;
-}
-.lang-select select{
-    position:absolute;
-    color: grey;
-    border: none;
-    background: black;
-    text-decoration: none;
-    top:25%;
-    left:35%;
+@media (max-width: 760px) {
+  .footer-panel {
+    font-size: 0.6em;
+    max-width: unset;
+  }
+  .footer-links li {
+    min-width: 10em;
+  }
 
+  div.lang-select {
+    height: 20px;
+    width: 70px;
+  }
+
+  .lang-select #footer-lang {
+    font-size: 1.1em;
+  }
+
+  .lang-select i {
+    top: 25%;
+    left: 5%;
+  }
+
+  .lang-select select {
+    left: 25%;
+  }
+
+  .lang-select i .bi-bi-globe2 {
+    width: 14px;
+    height: 14px;
+  }
 }
