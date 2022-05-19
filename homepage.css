@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: black;
 }
@@ -7,53 +12,64 @@ footer{
     color: grey;
     background-color: inherit;
     width: 100%;
-    height: vh;
+    height: 40%;
 }
 
-footer > div.div-che-flexa{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    }
+.footer-panel{
+    letter-spacing: 0;
+    display: block;
+    margin:20px auto 0;
+    padding:0 4%;
+    max-width: 960px;
+}
 
-div.div-che-flexa > ul{
-    background-color: yellow;
+.footer-panel p{
+    padding:15px 0;
+}
+
+.footer-links{
+    margin: 10px 0;
     display: flex;
     justify-content:flex-start; 
-    flex-direction: column;
-    width:980px;
-    height: 20vh;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+
 }
-div.div-che-flexa > ul > li{
+.footer-links li{
+    flex-basis: 25%;
     display: list-item;
-    width: 130px;
-    height: 35px;
-    padding-bottom: 5px;
-    padding-right: 30px;
+    min-width: 150px;
+    margin-bottom: 16px;
     list-style: none;
+    list-style-position:inside;
+    box-sizing: border-box;
+    text-align: left;
+    padding:0;
 }
 div.lang-select{
-    padding: 5px;
-border: 2px solid grey;
-display: flex;
-justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    position:relative;
+padding: 5px;
+border: 1px solid grey;
+border-radius: 5%;
 background-color: black;
-height: 10%;
-width: 7%;
+height: 30px;
+width: 100px;
 }
-img[src="assets/mondo-selezione-lingua.jpg"]{
-    background-color: white;
-    height: 30px;
-    width: 30px;
+.lang-select i{
+    position:absolute;
+    top:25%;
+    left:10%;
 }
-select{
- text-decoration: none;
+.lang-select select{
+    position:absolute;
+    color: grey;
+    border: none;
+    background: black;
+    text-decoration: none;
+    top:25%;
+    left:35%;
+
 }
