@@ -118,17 +118,29 @@ div.lang-select {
   padding-inline-start: 0px;
 }
 .visibletext {
-  margin-left: 30px;
   font-weight: bold;
   text-align: left;
   margin-top: 15px;
   font-size: large;
-  padding: 15px 0 20px;
+  padding: 15px 20px 20px;
+}
+.visibletext:hover {
+    border-bottom: 1px solid black;
 }
 .hiddentext {
   font-weight: 500;
-  padding: 0px 40px 0px 40px;
+  padding: 0px 50px 0px 40px;
+  margin-top: 2em;
+}
+.hiddentext1 {
+  font-weight: 500;
+  padding: 0px 50px 0px 40px;
   margin-top: 1em;
+}
+.hiddentext6 {
+  font-weight: 500;
+  padding: 0px 50px 0px 40px;
+  margin-top: 2.5em;
 }
 .emailform {
   display: flex;
