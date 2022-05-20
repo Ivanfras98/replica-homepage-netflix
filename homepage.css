@@ -12,6 +12,40 @@
 body {
   background-color: black;
 }
+
+/*Section_1*/
+.tv-section {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  justify-items:center;
+  align-items:center;
+}
+.tv-div {
+  grid-column:1;
+  color:white;
+  margin-left:32%;
+}
+.tv-div > h2 {
+  font-size:40px;
+  margin-bottom:10px;
+}
+.tv-div > p {
+  font-size:24px;
+  line-height: 32px;
+}
+.tv {
+  grid-column:2;
+  margin-right:32%;
+}
+.tv>img{
+  width:545px;
+}
+hr {
+  background-color:gray;
+  opacity:0.3;
+  height: 7px;
+}
+
 /* Footer CSS */
 footer {
   display: block;
