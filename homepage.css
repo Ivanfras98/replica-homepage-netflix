@@ -10,8 +10,10 @@
 }
 
 body {
-  background-color: black;
-}
+  background-color: black;}
+   /* width: 100vw;
+  height: 100vh
+ */
 /* Footer CSS */
 footer {
   display: block;
@@ -181,4 +183,18 @@ div.lang-select {
   margin-top: 50px;
   padding: 15px 0px 20px;
   font-size: larger;
+}
+.svgplus{
+  display: inline-block;
+  position: absolute;
+  top: 23px;
+  right: 3%;
+}
+
+@media (max-width:760px) {
+  
+}
+
+@media (max-width:375px) {
+  
 }
