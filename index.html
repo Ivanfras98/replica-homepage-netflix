@@ -5,15 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="homepage.css" />
-    <title>Document</title>
+    <title>Netflix Italia - Guarda serie TV online. Guarda film online.</title>
+    <link rel="shortcut icon" href="assets/netflix.png" type="image/x-icon">
+    <meta name="Author" content="Team-6 classe fullstack4 develhope">
+    <meta name="description" content="Replica Sito Netflix">
   </head>
   <body>
+    <header>
+      <img src="assets/Logonetflix.png" width="200px" height="61px" alt="logo netflix">
+      <select name="lingua" id="lingua">
+          <option value="lingua">Italiano</option>
+          <option value="lingua">English</option>
+      </select>
+      <button type="submit">Accedi</button>
+  </header>
+
+  <nav>
+      <ul>
+          <li>Film, serie tv e tanto altro</li>
+          <li>Senza limiti.</li>
+          <li>Guarda ciò che vuoi ovunque. Disdici quando vuoi</li>
+          <li>Vuoi guardare Netflix? Inserirsci il tuo indirizzo email per abbonarti o riattivare il tuo abbonamento</li>
+      </ul>
+     
+
+      <form>
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Indirizzo email">
+          <button type="submit">Accedi</button>
+      </form>
+  </nav>
     <!--Buon lavoro ragazzi-->
 
     <!-------------------------------------------------------SEZIONE 3-------------------------------------------->
 
     <section class="">
       <div class="">
+        <img
+          src="/replica-homepage-netflix/assets/mobile-0819.jpg"
+          alt="11_Promo-shot"
+        />
+        <div class="">
+          <img src="/replica-homepage-netflix/assets/boxshot.png" alt="" />
         <img src="assets/mobile-0819.jpg" alt="11_Promo-shot" />
         <div class="">
           <img src="assets/boxshot.png" alt="" />
@@ -28,6 +61,102 @@
         </h2>
       </div>
     </section>
+    <!--SEZIONE FAQ-->
+    <div class="wholefaq">
+
+      <section class="FAQ">
+        <h2 class="faqh2">Domande frequenti</h2>
+      <ul class="FAQ_list">
+        <li class="Answer">
+          <p class="visibletext">Cos'è Netflix?
+            <!-- <input id="poverino" value="+" type="submit" />  -->
+          </p>
+          <br />
+          <img src="assets/more.png" width="20px" class="plus" alt="simbolo più dove cliccare"> 
+          <p class="hiddentext1">
+            Netflix è un servizio di streaming che offre una varietà di serie
+            TV, film, documentari pluripremiati e tanto altro su una vasta gamma
+            di dispositivi connessi a Internet. <br />
+            Guarda quello che vuoi, in qualsiasi momento e senza interruzioni
+            pubblicitarie. Il tutto a una quota mensile ridotta. C'è sempre
+            qualcosa di nuovo da scoprire: aggiungiamo nuovi film e serie TV
+            ogni settimana!
+          </p>
+        </li>
+        <li class="Short_answer">
+          <p class="visibletext">Quanto costa Netflix?</p>
+          <img src="assets/more.png" width="20px" class="plus" alt="simbolo più dove cliccare"> 
+          <p class="hiddentext">
+            Guarda Netflix su smartphone, tablet, Smart TV, laptop o dispositivi
+            per lo streaming, il tutto per un importo mensile fisso. <br />
+            Piani da 7,99 € a 17,99 € al mese. Nessun costo aggiuntivo, nessun
+            contratto.
+          </p>
+        </li>
+        <li class="Long_answer">
+          <p class="visibletext">Dove posso guardare Netflix?</p>
+         <img src="assets/more.png" width="20px" class="plus" alt="simbolo più dove cliccare"> 
+          <p class="hiddentext">
+            Guarda Netflix dove vuoi, quando vuoi. Accedi al tuo account per
+            guardare subito Netflix dal tuo computer su netflix.com oppure da
+            qualsiasi dispositivo connesso a Internet che supporta l'app
+            Netflix, come smart TV, smartphone, tablet, lettori multimediali per
+            streaming e console per videogiochi. <br />
+            Con l'app per iOS, Android e Windows 10 puoi anche scaricare i tuoi
+            programmi preferiti. Usa la funzionalità di download per guardare i
+            contenuti mentre sei in viaggio e senza connessione a Internet.
+            Porta Netflix sempre con te.
+          </p>
+        </li>
+        <li class="Short_answer">
+          <p class="visibletext">Come posso disdire?</p>
+          <img src="assets/more.png" width="20px" class="plus" alt="simbolo più dove cliccare"> 
+          <p class="hiddentext">
+            Netflix è flessibile. Nessun contratto fastidioso e nessun impegno.
+            Puoi facilmente disdire il tuo contratto online con due clic.
+            Nessuna penale: attiva o disdici il tuo account in qualsiasi
+            momento.
+          </p>
+        </li>
+        <li class="Short_answer">
+          <p class="visibletext">Cosa posso guardare su Netflix?</p>
+         <img src="assets/more.png" width="20px" class="plus" alt="simbolo più dove cliccare"> 
+          <p class="hiddentext">
+            Netflix ha un nutrito catalogo di lungometraggi, documentari, serie
+            TV, anime, originali Netflix pluripremiati e tanto altro. Guarda
+            tutto quello che vuoi, in qualsiasi momento.
+          </p>
+        </li>
+        <li class="Answer">
+          <p class="visibletext">Netflix è adatto ai bambini?</p> 
+          <img src="assets/more.png" width="20px" class="plus" alt="simbolo più dove cliccare"> 
+          <p class="hiddentext6">
+            L'area Netflix Bambini, già inclusa nell'abbonamento, offre ai
+            genitori un maggiore controllo sui contenuti e ai più piccoli uno
+            spazio dedicato dove guardare serie TV e film per tutta la famiglia.
+            <br />
+            I profili Bambini hanno un filtro famiglia con PIN che ti permette
+            di limitare l'accesso ai contenuti in base alla fascia d'età e
+            bloccare la visione di titoli specifici.
+          </p>
+        </li>
+      </ul>
+      <div class="emailform"> 
+
+        <form action="email">
+          <p class="pmail">
+            Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o
+            riattivare il tuo abbonamento.
+          </p>
+          <label for="email"></label>
+          <input id="email" type="email" placeholder="Indirizzo email" required />
+          <input type="submit" id="button" value="Inizia >" />
+        </form>
+      </div>
+      </div>
+    </section>
+    <footer></footer>
+  </div>
 
     <!-----------------------------------Sezione Footer-------------------------------------->
 
