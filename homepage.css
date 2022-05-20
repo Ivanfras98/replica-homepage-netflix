@@ -1,1 +1,184 @@
-/* Buon lavoro /*
+:root {
+    --border-color:#222222;
+    --red-color:#de0611;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+}
+/* Footer CSS */
+footer {
+  display: block;
+  color: grey;
+  background-color: inherit;
+  width: 100%;
+  height: 40%;
+}
+
+.footer-panel {
+  letter-spacing: 0;
+  display: block;
+  margin: 20px auto 0;
+  padding: 0 4%;
+  max-width: 960px;
+}
+
+.footer-panel p {
+  padding: 15px 0;
+}
+
+.footer-links {
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.footer-links li {
+  flex-basis: 25%;
+  display: list-item;
+  min-width: 150px;
+  margin-bottom: 16px;
+  list-style: none;
+  list-style-position: inside;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 0;
+}
+div.lang-select {
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5%;
+  background-color: black;
+  height: 30px;
+  width: 100px;
+}
+.lang-select i {
+  position: absolute;
+  top: 13%;
+  left: 7%;
+}
+.lang-select select {
+  position: absolute;
+  color: grey;
+  border: none;
+  background: black;
+  text-decoration: none;
+  top: 20%;
+  left: 30%;
+}
+/* css faq */
+
+.wholefaq {
+  display: flex;
+  border-bottom: 7px solid var(--border-color);
+  border-top: 7px solid #222222;
+  justify-content: center;
+}
+.faqh2 {
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+  padding: 40px 0 50px;
+  position: relative;
+  left: 18%;
+}
+.Answer , .Long_answer , .Short_answer {
+  margin-left: 0px;
+  height: 5em;
+  width: 50em;
+  overflow: hidden;
+  background-color: #303030;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  padding: 0%;
+  position: relative;
+}
+.Answer:hover {
+  height: 15em;
+}
+.Long_answer:hover {height: 18em;}
+.Short_answer:hover {height: 12em;}
+
+.FAQlist {
+  height: 3em;
+  width: 300px;
+  margin-left: 700px;
+  padding-inline-start: 0px;
+}
+.visibletext {
+  font-weight: bold;
+  text-align: left;
+  margin-top: 15px;
+  font-size: large;
+  padding: 15px 20px 20px;
+}
+.visibletext:hover {
+    border-bottom: 1px solid black;
+}
+.hiddentext {
+  font-weight: 500;
+  padding: 0px 50px 0px 40px;
+  margin-top: 2em;
+}
+.hiddentext1 {
+  font-weight: 500;
+  padding: 0px 50px 0px 40px;
+  margin-top: 1em;
+}
+.hiddentext6 {
+  font-weight: 500;
+  padding: 0px 50px 0px 40px;
+  margin-top: 2.5em;
+}
+.emailform {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  position: relative;
+  bottom: 20px;
+  margin-top: 1rem;
+  margin-bottom: 35px;
+}
+#email {
+  height: 60px;
+  width: 32em;
+  padding-left: 10px;
+  margin-left: 11%;
+}
+#button {
+  margin-left: -5px;
+  height: 64px;
+  color: white;
+  background-color: var(--red-color);
+  width: 170px;
+  font-weight: bolder;
+  font-size: large;
+  position: relative;
+  top: 1px;
+  right: 1px;
+}
+.plus {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: 4%;
+}
+
+.pmail {
+  color: white;
+  margin-top: 50px;
+  padding: 15px 0px 20px;
+  font-size: larger;
+}
