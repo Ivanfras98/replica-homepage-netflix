@@ -10,10 +10,10 @@
 }
 
 body {
-  background-color: black;}
-   /* width: 100vw;
-  height: 100vh
- */
+  background-color: black;
+  width: 100vw;
+  height: 100vh}
+
 /* Footer CSS */
 footer {
   display: block;
@@ -191,10 +191,10 @@ div.lang-select {
   right: 3%;
 }
 
-@media (max-width:760px) {
+@media (max-width:768px) {
   
 }
 
-@media (max-width:375px) {
+@media (max-width:480px) {
   
 }
