@@ -12,6 +12,7 @@ body {
 /* Footer section */
 
 footer {
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
   color: grey;
   background-color: inherit;
@@ -70,7 +71,7 @@ div.lang-select {
   border: none;
   background: black;
   text-decoration: none;
-  top: 25%;
+  top: 27%;
   left: 35%;
 }
 
