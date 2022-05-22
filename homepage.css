@@ -10,12 +10,11 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   background-color: black;
 }
 
 /*Section_1*/
+
 .tv-section {
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -49,6 +48,7 @@ hr {
 }
 
 /* Footer CSS */
+
 footer {
   font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
@@ -88,6 +88,11 @@ footer {
   text-align: left;
   padding: 0;
 }
+
+.footer-panel:last-child{
+  font-size: 12px;
+}
+
 div.lang-select {
   margin-bottom: 10px;
   position: relative;
@@ -100,8 +105,8 @@ div.lang-select {
 }
 .lang-select i {
   position: absolute;
-  top: 25%;
-  left: 10%;
+  top: 22%;
+  left: 8%;
 }
 .lang-select select {
   position: absolute;
@@ -109,11 +114,21 @@ div.lang-select {
   border: none;
   background: black;
   text-decoration: none;
-  top: 27%;
-  left: 35%;
+  top: 20%;
+  left: 28%;
+}
+
+.lang-select i svg{
+  width: 15px;
+  height: 15px;
 }
 
 @media (max-width: 760px) {
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
   .footer-panel {
     font-size: 0.6em;
     max-width: unset;
