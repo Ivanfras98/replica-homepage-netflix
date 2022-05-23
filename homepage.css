@@ -1,6 +1,6 @@
 :root {
-    --border-color:#222222;
-    --red-color:#de0611;
+  --border-color: #222222;
+  --red-color: #de0611;
 }
 * {
   margin: 0;
@@ -11,8 +11,8 @@
 
 body {
   background-color: black;
-  width: 100vw;
-  height: 100vh}
+  height: 100vh;
+}
 
 /* Footer CSS */
 footer {
@@ -80,11 +80,13 @@ div.lang-select {
   left: 30%;
 }
 /* css faq */
-
+.FAQ {
+  margin-bottom: 10px;
+}
 .wholefaq {
   display: flex;
-  border-bottom: 7px solid var(--border-color);
-  border-top: 7px solid #222222;
+  border-bottom: 8px solid var(--border-color);
+  border-top: 8px solid #222222;
   justify-content: center;
 }
 .faqh2 {
@@ -95,10 +97,12 @@ div.lang-select {
   position: relative;
   left: 18%;
 }
-.Answer , .Long_answer , .Short_answer {
+.Answer,
+.Long_answer,
+.Short_answer {
   margin-left: 0px;
-  height: 5em;
-  width: 50em;
+  height: 74.59px;
+  width: 815px;
   overflow: hidden;
   background-color: #303030;
   color: white;
@@ -108,41 +112,60 @@ div.lang-select {
   position: relative;
 }
 .Answer:hover {
-  height: 15em;
+  height: 22em;
 }
-.Long_answer:hover {height: 18em;}
-.Short_answer:hover {height: 12em;}
+.Long_answer:hover {
+  height: 27em;
+}
+.Short_answer:hover {
+  height: 16em;
+}
 
-.FAQlist {
-  height: 3em;
-  width: 300px;
-  margin-left: 700px;
-  padding-inline-start: 0px;
+.FAQ_list {
+  display: inline;
+  width: 815px;
+  height: 493px;
 }
+
 .visibletext {
-  font-weight: bold;
+  font-weight: 400;
   text-align: left;
-  margin-top: 15px;
-  font-size: large;
-  padding: 15px 20px 20px;
+  margin-top: 11px;
+  font-size: 25px;
+  padding: 12px 32px 25px;
 }
 .visibletext:hover {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .hiddentext {
-  font-weight: 500;
-  padding: 0px 50px 0px 40px;
-  margin-top: 2em;
-}
-.hiddentext1 {
-  font-weight: 500;
+  font-weight: 400;
   padding: 0px 50px 0px 40px;
   margin-top: 1em;
+  font-size: 25px;
+}
+.hiddentext1 {
+  font-weight: 400;
+  padding: 0px 50px 0px 40px;
+  margin-top: 0.5em;
+  font-size: 25px;
+}
+.hiddentext3 {
+  font-weight: 400;
+  padding: 0px 50px 0px 40px;
+  margin-top: 1.6em;
+  font-size: 25px;
+}
+.hiddentext5 {
+  font-weight: 400;
+  padding: 0px 50px 0px 40px;
+  margin-top: 1.5em;
+  font-size: 25px;
 }
 .hiddentext6 {
-  font-weight: 500;
+  font-weight: 400;
   padding: 0px 50px 0px 40px;
-  margin-top: 2.5em;
+  margin-top: 1.2em;
+  font-size: 25px;
 }
 .emailform {
   display: flex;
@@ -150,26 +173,27 @@ div.lang-select {
   padding-bottom: 20px;
   position: relative;
   bottom: 20px;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 35px;
 }
 #email {
   height: 60px;
-  width: 32em;
+  width: 450px;
   padding-left: 10px;
   margin-left: 11%;
 }
 #button {
-  margin-left: -5px;
-  height: 64px;
+  margin-left: -3px;
+  height: 60px;
   color: white;
   background-color: var(--red-color);
-  width: 170px;
+  width: 138.14px;
   font-weight: bolder;
   font-size: large;
   position: relative;
   top: 1px;
   right: 1px;
+  border: none;
 }
 .plus {
   display: inline-block;
@@ -184,17 +208,15 @@ div.lang-select {
   padding: 15px 0px 20px;
   font-size: larger;
 }
-.svgplus{
+.svgplus {
   display: inline-block;
   position: absolute;
-  top: 23px;
-  right: 3%;
+  top: 21px;
+  right: 2.5%;
 }
 
-@media (max-width:768px) {
-  
+@media (max-width: 768px) { 
 }
 
-@media (max-width:480px) {
-  
+@media (max-width: 480px) {
 }
