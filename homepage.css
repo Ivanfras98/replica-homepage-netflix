@@ -10,6 +10,8 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   background-color: black;
   height: 100vh;
 }
@@ -147,7 +149,132 @@ div.lang-select {
   cursor: default;
   transform: translateY(-50%);
 }
-@media (max-width: 768px) {
+
+/* css faq */
+.FAQ {
+  margin-bottom: 10px;
+}
+.wholefaq {
+  display: flex;
+  border-bottom: 8px solid var(--border-color);
+  border-top: 8px solid #222222;
+  flex-direction: column;
+}
+.faqh2 {
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+  padding: 40px 0 50px;
+  align-self: center;
+}
+.wrapper-ul {max-width: 815px;
+align-self: center;}
+.Answer{
+  margin-left: 0px;
+  height: 74.59px;
+  width: 95%;
+  overflow: hidden;
+  background-color: #303030;
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 0%;
+  position: relative;
+  font-size: 25px;
+}
+.Answer:hover {
+  height: fit-content;
+  padding-bottom: 2em;
+}
+.Long_answer:hover {
+  height: fit-content;
+  padding-bottom: 2em;
+}
+.Short_answer:hover {
+  height: fit-content;
+  padding-bottom: 2em;
+}
+
+.FAQ_list {
+  display: inline;
+  height: 493px;
+}
+
+.visibletext {
+  font-weight: 400;
+  text-align: left;
+  margin-top: 11px;
+  /* font-size: 25px; */
+  padding: 12px 32px 25px;
+}
+.visibletext:hover {
+  border-bottom: 1px solid black;
+}
+.hiddentext {
+  font-weight: 400;
+  padding: 0px 50px 0px 40px;
+  margin-top: 1em;
+  /* font-size: 25px; */
+}
+.FAQ_list li:first-child .hiddentext {
+  margin-top: 0.5em;
+}
+.emailform {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  position: relative;
+  bottom: 20px;
+  margin-top: 1.5rem;
+  margin-bottom: 35px;
+}
+#email {
+  height: 60px;
+  padding-left: 10px;
+  width: 65%;
+}
+#button {
+  height: 60px;
+  color: white;
+  background-color: var(--red-color);
+  width: 15%;
+  font-weight: bolder;
+  font-size: large;
+  border: none;
+  margin-left: 1px;
+}
+.plus {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: 4%;
+}
+
+.pmail {
+  color: white;
+  margin-top: 50px;
+  padding: 15px 0px 20px;
+  font-size: large;
+  text-align: center;
+}
+.svgplus {
+  display: inline-block;
+  position: absolute;
+  top: 21px;
+  right: 2.5%;
+}
+.form {
+  margin: auto;
+}
+.wrap2 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  max-width: 815px;
+}
+
+@media (max-width: 768px){
   .footer-panel {
     font-size: 0.6em;
     max-width: unset;
@@ -155,7 +282,6 @@ div.lang-select {
   .footer-links li {
     min-width: 11em;
   }
-
 
   .lang-select select {
     padding: 12px 20px 12px 35px;
@@ -171,146 +297,15 @@ div.lang-select {
     height: 12px;
   }
 
-}
+ .Answer {font-size: 20px;}
+ .visibletext {margin-top: 15px;}
 
-/* css faq */
-.FAQ {
-  margin-bottom: 10px;
+ #button {font-size: medium;}
+ .faqh2 {font-size: 25px;}
 }
-.wholefaq {
-  display: flex;
-  border-bottom: 8px solid var(--border-color);
-  border-top: 8px solid #222222;
-  justify-content: center;
-}
-.faqh2 {
-  color: white;
-  font-weight: bolder;
-  font-size: 50px;
-  padding: 40px 0 50px;
-  position: relative;
-  left: 18%;
-}
-.Answer,
-.Long_answer,
-.Short_answer {
-  margin-left: 0px;
-  height: 74.59px;
-  width: 815px;
-  overflow: hidden;
-  background-color: #303030;
-  color: white;
-  margin-bottom: 0.5rem;
-  text-align: left;
-  padding: 0%;
-  position: relative;
-}
-.Answer:hover {
-  height: 22em;
-}
-.Long_answer:hover {
-  height: 27em;
-}
-.Short_answer:hover {
-  height: 15em;
-}
-
-.FAQ_list {
-  display: inline;
-  width: 815px;
-  height: 493px;
-}
-
-.visibletext {
-  font-weight: 400;
-  text-align: left;
-  margin-top: 11px;
-  font-size: 25px;
-  padding: 12px 32px 25px;
-}
-.visibletext:hover {
-  border-bottom: 1px solid black;
-}
-.hiddentext {
-  font-weight: 400;
-  padding: 0px 50px 0px 40px;
-  margin-top: 1em;
-  font-size: 25px;
-}
-.hiddentext1 {
-  font-weight: 400;
-  padding: 0px 50px 0px 40px;
-  margin-top: 0.5em;
-  font-size: 25px;
-}
-.hiddentext3 {
-  font-weight: 400;
-  padding: 0px 50px 0px 40px;
-  margin-top: 1.6em;
-  font-size: 25px;
-}
-.hiddentext5 {
-  font-weight: 400;
-  padding: 0px 50px 0px 40px;
-  margin-top: 1.5em;
-  font-size: 25px;
-}
-.hiddentext6 {
-  font-weight: 400;
-  padding: 0px 50px 0px 40px;
-  margin-top: 1.2em;
-  font-size: 25px;
-}
-.emailform {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-  position: relative;
-  bottom: 20px;
-  margin-top: 1.5rem;
-  margin-bottom: 35px;
-}
-#email {
-  height: 60px;
-  width: 450px;
-  padding-left: 10px;
-  margin-left: 11%;
-}
-#button {
-  margin-left: -3px;
-  height: 60px;
-  color: white;
-  background-color: var(--red-color);
-  width: 138.14px;
-  font-weight: bolder;
-  font-size: large;
-  position: relative;
-  top: 1px;
-  right: 1px;
-  border: none;
-}
-.plus {
-  display: inline-block;
-  position: absolute;
-  top: 30px;
-  right: 4%;
-}
-
-.pmail {
-  color: white;
-  margin-top: 50px;
-  padding: 15px 0px 20px;
-  font-size: larger;
-}
-.svgplus {
-  display: inline-block;
-  position: absolute;
-  top: 21px;
-  right: 2.5%;
-}
-
-@media (max-width: 768px) { 
-}
-
-@media (max-width: 480px) {
+@media (max-width:360px) {
+.Answer {font-size: 18px ;}
+.visibletext {padding-left: 22px;
+margin-top: 17px;}
+  
 }
