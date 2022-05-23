@@ -1,6 +1,6 @@
 :root {
-  --border-color:#222222;
-  --red-color:#de0611;
+  --border-color: #222222;
+  --red-color: #de0611;
 }
 * {
   margin: 0;
@@ -16,34 +16,34 @@ body {
 /*Section_1*/
 
 .tv-section {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  justify-items:center;
-  align-items:center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 .tv-div {
-  grid-column:1;
-  color:white;
-  margin-left:32%;
+  grid-column: 1;
+  color: white;
+  margin-left: 32%;
 }
 .tv-div > h2 {
-  font-size:40px;
-  margin-bottom:10px;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 .tv-div > p {
-  font-size:24px;
+  font-size: 24px;
   line-height: 32px;
 }
 .tv {
-  grid-column:2;
-  margin-right:32%;
+  grid-column: 2;
+  margin-right: 32%;
 }
-.tv>img{
-  width:545px;
+.tv > img {
+  width: 545px;
 }
 hr {
-  background-color:gray;
-  opacity:0.3;
+  background-color: gray;
+  opacity: 0.3;
   height: 7px;
 }
 
@@ -62,11 +62,22 @@ footer {
   letter-spacing: 0;
   margin: 20px auto 0;
   padding: 0 4%;
-  max-width: 60%;
+  max-width: 1000px;
+  width: 90%;
 }
 
 .footer-panel p {
   padding: 15px 0;
+}
+
+.footer-panel a {
+  text-decoration: none;
+  color: grey;
+}
+
+.footer-panel p a.issue-phone-number:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer-links {
@@ -89,77 +100,78 @@ footer {
   padding: 0;
 }
 
-.footer-panel:last-child{
+.footer-links li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-panel:last-child p {
+  padding-top: 30px;
   font-size: 12px;
 }
 
 div.lang-select {
-  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: inline-block;
   position: relative;
-  padding: 5px;
-  border: 1px solid grey;
-  border-radius: 5%;
-  background-color: black;
-  height: 30px;
-  width: 100px;
+  background-color: none;
 }
 .lang-select i {
   position: absolute;
-  top: 22%;
-  left: 8%;
+  top: 51%;
+  left: 10%;
+  transform: translateY(-50%);
 }
 .lang-select select {
-  position: absolute;
+  padding: 16px 25px 16px 45px;
+  font-size: 16px;
   color: grey;
-  border: none;
-  background: black;
-  text-decoration: none;
-  top: 20%;
-  left: 28%;
+  border: 1px solid grey;
+  border-radius: 2px;
+  background-color: transparent;
+  appearance: none;
 }
-
-.lang-select i svg{
-  width: 15px;
-  height: 15px;
+.lang-select select option {
+  background-color: black;
 }
-
-@media (max-width: 760px) {
-body{
-  width: 100vw;
-  height: 100vh;
+.lang-select i svg {
+  width: 16px;
+  height: 16px;
 }
-
+.lang-select .arrow-down {
+  font-size: 0.7em;
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  cursor: default;
+  transform: translateY(-50%);
+}
+@media (max-width: 768px) {
   .footer-panel {
     font-size: 0.6em;
     max-width: unset;
   }
   .footer-links li {
-    min-width: 10em;
+    min-width: 11em;
   }
 
-  div.lang-select {
-    height: 20px;
-    width: 70px;
+
+  .lang-select select {
+    padding: 12px 20px 12px 35px;
+    font-size: 0.6em;
   }
 
   .lang-select #footer-lang {
     font-size: 1.1em;
   }
 
-  .lang-select i {
-    top: 25%;
-    left: 5%;
-  }
-
-  .lang-select select {
-    left: 25%;
-  }
-
   .lang-select i .bi-bi-globe2 {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
   }
+
 }
+
 /* css faq */
 
 .wholefaq {
@@ -176,7 +188,9 @@ body{
   position: relative;
   left: 18%;
 }
-.Answer , .Long_answer , .Short_answer {
+.Answer,
+.Long_answer,
+.Short_answer {
   margin-left: 0px;
   height: 5em;
   width: 50em;
@@ -191,8 +205,12 @@ body{
 .Answer:hover {
   height: 15em;
 }
-.Long_answer:hover {height: 18em;}
-.Short_answer:hover {height: 12em;}
+.Long_answer:hover {
+  height: 18em;
+}
+.Short_answer:hover {
+  height: 12em;
+}
 
 .FAQlist {
   height: 3em;
@@ -208,7 +226,7 @@ body{
   padding: 15px 20px 20px;
 }
 .visibletext:hover {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .hiddentext {
   font-weight: 500;
