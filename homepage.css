@@ -14,8 +14,44 @@ body {
   height: 100vh;
 }
 
+/*Section_1*/
+
+.tv-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.tv-div {
+  grid-column: 1;
+  color: white;
+  margin-left: 32%;
+}
+.tv-div > h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.tv-div > p {
+  font-size: 24px;
+  line-height: 32px;
+}
+.tv {
+  grid-column: 2;
+  margin-right: 32%;
+}
+.tv > img {
+  width: 545px;
+}
+hr {
+  background-color: gray;
+  opacity: 0.3;
+  height: 7px;
+}
+
 /* Footer CSS */
+
 footer {
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
   color: grey;
   background-color: inherit;
@@ -25,20 +61,30 @@ footer {
 
 .footer-panel {
   letter-spacing: 0;
-  display: block;
   margin: 20px auto 0;
   padding: 0 4%;
-  max-width: 960px;
+  max-width: 1000px;
+  width: 90%;
 }
 
 .footer-panel p {
   padding: 15px 0;
 }
 
+.footer-panel a {
+  text-decoration: none;
+  color: grey;
+}
+
+.footer-panel p a.issue-phone-number:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .footer-links {
   margin: 10px 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -54,31 +100,79 @@ footer {
   text-align: left;
   padding: 0;
 }
+
+.footer-links li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-panel:last-child p {
+  padding-top: 30px;
+  font-size: 12px;
+}
+
 div.lang-select {
-  padding: 10px;
-  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: inline-block;
   position: relative;
-  padding: 5px;
-  border: 1px solid grey;
-  border-radius: 5%;
-  background-color: black;
-  height: 30px;
-  width: 100px;
+  background-color: none;
 }
 .lang-select i {
   position: absolute;
-  top: 13%;
-  left: 7%;
+  top: 51%;
+  left: 10%;
+  transform: translateY(-50%);
 }
 .lang-select select {
-  position: absolute;
+  padding: 16px 25px 16px 45px;
+  font-size: 16px;
   color: grey;
-  border: none;
-  background: black;
-  text-decoration: none;
-  top: 20%;
-  left: 30%;
+  border: 1px solid grey;
+  border-radius: 2px;
+  background-color: transparent;
+  appearance: none;
 }
+.lang-select select option {
+  background-color: black;
+}
+.lang-select i svg {
+  width: 16px;
+  height: 16px;
+}
+.lang-select .arrow-down {
+  font-size: 0.7em;
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  cursor: default;
+  transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+  .footer-panel {
+    font-size: 0.6em;
+    max-width: unset;
+  }
+  .footer-links li {
+    min-width: 11em;
+  }
+
+
+  .lang-select select {
+    padding: 12px 20px 12px 35px;
+    font-size: 0.6em;
+  }
+
+  .lang-select #footer-lang {
+    font-size: 1.1em;
+  }
+
+  .lang-select i .bi-bi-globe2 {
+    width: 12px;
+    height: 12px;
+  }
+
+}
+
 /* css faq */
 .FAQ {
   margin-bottom: 10px;
@@ -118,7 +212,7 @@ div.lang-select {
   height: 27em;
 }
 .Short_answer:hover {
-  height: 16em;
+  height: 15em;
 }
 
 .FAQ_list {
