@@ -364,6 +364,12 @@ div.lang-select {
 
   }
 
+  .kids-section .kids-profile div {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+
+
   .kids-profile .section-img {
     width: 100%;
   }
