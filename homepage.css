@@ -12,6 +12,69 @@
 body {
   background-color: black;
 }
+/*Navbar CSS*/
+
+.container {
+  background-image: url(assets/sfondo_netflix.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 90vh; 
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 100vw;
+  height: 150px;
+  flex-basis: 200px;
+  justify-content: space-between;
+}
+
+.header_lingua_accedi {
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
+}
+
+img[src="assets/Logonetflix.png"]{
+  margin-left: 30px;
+}
+
+.lingua {
+  justify-items: start;
+}
+
+.accedi {
+   justify-items: flex-end;
+}
+
+.introduction {
+  width: 60%;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introduction h2 {
+  font-size: 50px;
+  font-weight: 530;
+  margin-bottom: 25px;
+}
+
+.introduction h6 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.container form {
+  width: 60%;
+  margin: 0 auto;
+}
+
 /* Footer CSS */
 footer {
   display: block;
