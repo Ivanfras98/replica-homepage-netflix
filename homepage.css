@@ -1,160 +1,311 @@
-/* Buon lavoro */
-p {
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-weight: 600;
-    font-display: optional;
-    src: local("C:\Users\sngut\Downloads\netflix-sans-font\NetflixSans-Bold.otf");
-    color: white;
-    font-size: 1em;
-   
-    
+:root {
+  --border-color: #222222;
+  --red-color: #de0611;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-h1 {
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-weight: 600;
-    font-display: optional;
-    src: local("C:\Users\sngut\Downloads\netflix-sans-font\NetflixSans-Bold.otf");
-    color: white;
-    font-size: 3.1rem;
-    line-height: 1.1;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  height: 100vh;
 }
 
-h2 {
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    font-display: optional;
-    src: local("C:\Users\sngut\Downloads\netflix-sans-font\NetflixSans-Bold.otf");
-    color: white;
-    font-size: 1.6rem;
+/*Section_1*/
 
+.tv-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.tv-div {
+  grid-column: 1;
+  color: white;
+  margin-left: 32%;
+}
+.tv-div > h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.tv-div > p {
+  font-size: 24px;
+  line-height: 32px;
+}
+.tv {
+  grid-column: 2;
+  margin-right: 32%;
+}
+.tv > img {
+  width: 545px;
+}
+hr {
+  background-color: gray;
+  opacity: 0.3;
+  height: 7px;
 }
 
+/* Footer CSS */
 
-.section_2 {
-
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
+footer {
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: block;
+  color: grey;
+  background-color: inherit;
+  width: 100%;
+  height: 30%;
 }
 
-.leftCard {
-
-    max-width: 50%;
-    max-height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
+.footer-panel {
+  letter-spacing: 0;
+  margin: 20px auto 0;
+  padding: 0 4%;
+  max-width: 1000px;
+  width: 90%;
 }
 
-
-
-.upper_part {
-
-    max-width: 80%;
-    max-height: 80%;
-    display: flex;
-
+.footer-panel p {
+  padding: 15px 0;
 }
 
-.StrangerThings_img {
-    width: 100%;
-    height: 100%;
+.footer-panel a {
+  text-decoration: none;
+  color: grey;
 }
 
-
-
-.lower_part {
-
-    width: 50%;
-    height: 20%;
-    display: grid;
-    position: absolute;
-    grid-template-columns: 20% 60% 20%;
-    border-radius: 15px;
-    border: 2px solid grey;
-    background-color: rgb(0, 0, 0);
-    align-self: flex-end;
-    bottom: 20%;
-   
-
+.footer-panel p a.issue-phone-number:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.Poster_shot {
-
-    grid-column: 1;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    
+.footer-links {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.footer-links li {
+  flex-basis: 25%;
+  display: list-item;
+  min-width: 150px;
+  margin-bottom: 16px;
+  list-style: none;
+  list-style-position: inside;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 0;
 }
 
-.Poster_promo {
-max-width: 80%;
-max-height: 70%;
-padding-top: 5px;
-
-
-
-    
-}
-.download_a {
-max-height: 100%;
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-links li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.download_gif {
-
-    max-width: auto;
-    max-height: 100%;
-    grid-column: 3;
-    display: flex;
-    align-items: center;
-    
-    
-    
+.footer-panel:last-child p {
+  padding-top: 30px;
+  font-size: 12px;
 }
 
-.gif_dl {
-
-    max-width: auto;
-    max-height: 60%;
-    border-radius: 15px;
-    align-self: center;
-
+div.lang-select {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  background-color: none;
+}
+.lang-select i {
+  position: absolute;
+  top: 51%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.lang-select select {
+  padding: 16px 25px 16px 45px;
+  font-size: 16px;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 2px;
+  background-color: transparent;
+  appearance: none;
+}
+.lang-select select option {
+  background-color: black;
+}
+.lang-select i svg {
+  width: 16px;
+  height: 16px;
+}
+.lang-select .arrow-down {
+  font-size: 0.7em;
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  cursor: default;
+  transform: translateY(-50%);
 }
 
-.rightCard {
-
-    max-width: 50%;
-    max-height: 100%;
-    padding: 5rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
+/* css faq */
+.FAQ {
+  margin-bottom: 10px;
+}
+.wholefaq {
+  display: flex;
+  border-bottom: 8px solid var(--border-color);
+  border-top: 8px solid #222222;
+  flex-direction: column;
+}
+.faqh2 {
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+  padding: 40px 0 50px;
+  align-self: center;
+}
+.wrapper-ul {max-width: 815px;
+align-self: center;}
+.Answer{
+  margin-left: 0px;
+  height: 74.59px;
+  width: 95%;
+  overflow: hidden;
+  background-color: #303030;
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 0%;
+  position: relative;
+  font-size: 25px;
+}
+.Answer:hover {
+  height: fit-content;
+  padding-bottom: 2em;
+}
+.Long_answer:hover {
+  height: fit-content;
+  padding-bottom: 2em;
+}
+.Short_answer:hover {
+  height: fit-content;
+  padding-bottom: 2em;
 }
 
-.rightCard > h2 {
-
-    display: flex;
-    flex-wrap: wrap;
+.FAQ_list {
+  display: inline;
+  height: 493px;
 }
 
-@media screen (max-width: 815px) {
-
-    
-    
+.visibletext {
+  font-weight: 400;
+  text-align: left;
+  margin-top: 11px;
+  /* font-size: 25px; */
+  padding: 12px 32px 25px;
+}
+.visibletext:hover {
+  border-bottom: 1px solid black;
+}
+.hiddentext {
+  font-weight: 400;
+  padding: 0px 50px 0px 40px;
+  margin-top: 1em;
+  /* font-size: 25px; */
+}
+.FAQ_list li:first-child .hiddentext {
+  margin-top: 0.5em;
+}
+.emailform {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  position: relative;
+  bottom: 20px;
+  margin-top: 1.5rem;
+  margin-bottom: 35px;
+}
+#email {
+  height: 60px;
+  padding-left: 10px;
+  width: 65%;
+}
+#button {
+  height: 60px;
+  color: white;
+  background-color: var(--red-color);
+  width: 15%;
+  font-weight: bolder;
+  font-size: large;
+  border: none;
+  margin-left: 1px;
+}
+.plus {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: 4%;
 }
 
+.pmail {
+  color: white;
+  margin-top: 50px;
+  padding: 15px 0px 20px;
+  font-size: large;
+  text-align: center;
+}
+.svgplus {
+  display: inline-block;
+  position: absolute;
+  top: 21px;
+  right: 2.5%;
+}
+.form {
+  margin: auto;
+}
+.wrap2 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  max-width: 815px;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
+  .footer-panel {
+    font-size: 0.6em;
+    max-width: unset;
+  }
+  .footer-links li {
+    min-width: 11em;
+  }
 
+  .lang-select select {
+    padding: 12px 20px 12px 35px;
+    font-size: 0.6em;
+  }
 
+  .lang-select #footer-lang {
+    font-size: 1.1em;
+  }
+
+  .lang-select i .bi-bi-globe2 {
+    width: 12px;
+    height: 12px;
+  }
+
+ .Answer {font-size: 20px;}
+ .visibletext {margin-top: 15px;}
+
+ #button {font-size: medium;}
+ .faqh2 {font-size: 25px;}
+}
+@media (max-width:360px) {
+.Answer {font-size: 18px ;}
+.visibletext {padding-left: 22px;
+margin-top: 17px;}
+  
 }
