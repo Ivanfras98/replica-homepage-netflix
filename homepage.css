@@ -18,9 +18,6 @@ body {
 }
 
 /*--------------------------Section_1--------------------------------*/
-
-/*Section_1*/
-
 .tv-section {
   width:95%;
   margin:0 auto;
@@ -30,6 +27,7 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items:center;
   position:relative;
+  margin-top: 50px;
 }
 .tv-div {
   grid-column: 1;
@@ -257,10 +255,16 @@ hr {
 /* -------------------Navbar CSS------------------- */
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 52vh;
+  height: fit-content;
+  padding-bottom: 30px;
 }
-
+/* .imgwrap {
+  display: flex;
+  height: ;
+} */
 img[src="assets/sfondo_netflix.jpeg"] {
   background-image: url(assets/sfondo_netflix.png); 
   -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,1), rgba(0,0,0,0.2));
@@ -273,11 +277,16 @@ img[src="assets/sfondo_netflix.jpeg"] {
   height: 52vh;
   z-index: -1;
 }
-
+.pmail2 {
+  color: white;
+  margin-top: 50px;
+  padding: 15px 0px 20px;
+  font-size: large;
+  text-align: center;
+}
 img[src="assets/Logonetflix.png"] {
   color: #de0611;
 }
-
 #email-header {
   width: 55%;
   height: 60px;
@@ -308,8 +317,7 @@ img[src="assets/Logonetflix.png"] {
   margin: 0 auto;
   padding-top: 30px;
   width: 100%;
-  height: 150px;
-  flex-basis: 200px;
+  height: 100px;
   justify-content: space-between;
 }
 
@@ -318,6 +326,7 @@ img[src="assets/Logonetflix.png"] {
   /* width: 20%; */
   justify-content: space-evenly;
   margin-right: 20px;
+  width: 200px;
 }
 
 .scelta_lingua i {
@@ -417,6 +426,7 @@ footer {
 .footer-panel a {
   text-decoration: none;
   color: #757575;
+  font-size: 13px;
 }
 
 .footer-panel p a.issue-phone-number:hover {
@@ -554,7 +564,6 @@ div.lang-select {
   font-weight: 400;
   text-align: left;
   margin-top: 11px;
-  /* font-size: 25px; */
   padding: 12px 32px 25px;
 }
 .visibletext:hover {
@@ -564,7 +573,6 @@ div.lang-select {
   font-weight: 400;
   padding: 0px 50px 0px 40px;
   margin-top: 1em;
-  /* font-size: 25px; */
 }
 .FAQ_list li:first-child .hiddentext {
   margin-top: 0.5em;
@@ -624,6 +632,11 @@ div.lang-select {
 }
 
 @media (max-width: 768px) {
+  #button-header {font-size: medium;}
+  img[src="assets/sfondo_netflix.jpeg"] {
+    height: 610px;
+  }
+
   .footer-panel {
     padding: 50px 18px 20px;
     font-size: 13px;
@@ -740,7 +753,19 @@ div.lang-select {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 360px){
+  .introduction h2 {font-size: 30px;}
+  .introduction h6 {font-size: 15px;}
+  #email-header {
+    height:40px;
+    width: fit-content;
+  }
+  #button-header { height: 40px;
+  width: fit-content;
+font-size: medium; }
+  img[src="assets/sfondo_netflix.jpeg"] {
+    height: 490px;
+  }
   .kids-section .kids-profile div h2 {
     font-size: 1.625rem;
   }
@@ -807,4 +832,11 @@ div.lang-select {
     max-height: 60%;
     margin-bottom: 4px;
   }
+  .pmail2 {
+  color: white;
+  margin-top: 20px;
+  padding: 15px 0px 20px;
+  font-size: large;
+  text-align: center;
+}
 }
