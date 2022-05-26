@@ -85,6 +85,120 @@ hr {
   height: 100%;
 }
 
+
+/*Navbar CSS*/
+
+.container {
+  width: 100%;
+  height: 90vh;
+}
+
+img[src="assets/sfondo_netflix.jpeg"] {
+  background-image: url(assets/sfondo_netflix.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  height: 625px;
+  width: 100%;
+}
+
+img[src="assets/Logonetflix.png"] {
+  color: #de0611;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 100vw;
+  height: 150px;
+  flex-basis: 200px;
+  justify-content: space-between;
+
+}
+
+.header_lingua_accedi {
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
+}
+
+.scelta_lingua i {
+  position: absolute;
+  left: 6%;
+  top: 30%;
+}
+
+.scelta_lingua .bi-bi-globe2 {
+  height: 17px;
+}
+img[src="assets/Logonetflix.png"]{
+  margin-left: 30px;
+}
+
+.scelta_lingua {
+  position: relative;
+  height: fit-content;
+}
+
+.scelta_lingua select{
+  background-color: black;
+  border: 8px 8px white;
+  color: white;
+  padding: 10px 20px 10px 30px;
+  border-radius: 4px 4px 4px 4px;
+  font-size: inherit;
+  text-align: justify;
+  appearance: none;
+}
+
+.scelta_lingua p {
+  position: absolute;
+  right: 6%;
+  top: 35%;
+  font-size: 0.8rem;
+}
+
+.accedi {
+   background-color: #de0611;
+   color: white;
+   padding: 10px 20px;
+   border: #de0611;
+   border-radius: 4px 4px 4px 4px;
+   font-size: inherit;
+   text-align: justify;
+}
+
+.introduction {
+  width: 60%;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introduction h2 {
+  font-size: 50px;
+  font-weight: 530;
+  margin-bottom: 25px;
+}
+
+.introduction h6 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.container form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* -------------------Navbar CSS------------------- */
+
+/* Footer CSS */
+
 .kids-section .kids-profile div h2 {
   font-size: 3.125rem;
 }
