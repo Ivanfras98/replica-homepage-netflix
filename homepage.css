@@ -181,6 +181,11 @@ div.lang-select {
 .lang-select select option {
   background-color: black;
 }
+
+.lang-select i {
+  pointer-events: none;
+}
+
 .lang-select i svg {
   width: 16px;
   height: 16px;
@@ -192,6 +197,7 @@ div.lang-select {
   right: 8%;
   cursor: default;
   transform: translateY(-50%);
+  pointer-events: none;
 }
 
 /* css faq */
