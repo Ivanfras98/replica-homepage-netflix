@@ -742,6 +742,9 @@ div.lang-select {
 
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  
    
 
  }
@@ -749,6 +752,8 @@ div.lang-select {
  .rightCard > h2 {
 
     font-size: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     
  }
 
@@ -757,7 +762,7 @@ div.lang-select {
     max-width: 100%;
    max-height: 30%;
     min-width: 15em;
-    left: 15px;
+    left: 4rem;
     bottom: 30%;
 
  }
