@@ -84,6 +84,8 @@ hr {
   padding-left: 40px;
   height: 100%;
 }
+
+
 /*Navbar CSS*/
 
 .container {
@@ -92,14 +94,14 @@ hr {
 }
 
 img[src="assets/sfondo_netflix.jpeg"] {
-  background-image: url(assets/sfondo_netflix.jpeg);
+  background-image: url(assets/sfondo_netflix.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.3;
   position: absolute;
-  height: 600px;
-  width: 1500px;
+  height: 625px;
+  width: 100%;
 }
 
 img[src="assets/Logonetflix.png"] {
@@ -115,6 +117,7 @@ img[src="assets/Logonetflix.png"] {
   height: 150px;
   flex-basis: 200px;
   justify-content: space-between;
+
 }
 
 .header_lingua_accedi {
@@ -123,18 +126,40 @@ img[src="assets/Logonetflix.png"] {
   justify-content: space-evenly;
 }
 
+.scelta_lingua i {
+  position: absolute;
+  left: 6%;
+  top: 30%;
+}
+
+.scelta_lingua .bi-bi-globe2 {
+  height: 17px;
+}
 img[src="assets/Logonetflix.png"]{
   margin-left: 30px;
+}
+
+.scelta_lingua {
+  position: relative;
+  height: fit-content;
 }
 
 .scelta_lingua select{
   background-color: black;
   border: 8px 8px white;
   color: white;
-  padding: 10px 10px;
+  padding: 10px 20px 10px 30px;
   border-radius: 4px 4px 4px 4px;
   font-size: inherit;
   text-align: justify;
+  appearance: none;
+}
+
+.scelta_lingua p {
+  position: absolute;
+  right: 6%;
+  top: 35%;
+  font-size: 0.8rem;
 }
 
 .accedi {
@@ -166,7 +191,7 @@ img[src="assets/Logonetflix.png"]{
 }
 
 .container form {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
 }
 
