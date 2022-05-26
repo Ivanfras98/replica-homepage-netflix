@@ -15,12 +15,23 @@ body {
 /*Navbar CSS*/
 
 .container {
+  width: 100%;
+  height: 90vh;
+}
+
+img[src="assets/sfondo_netflix.jpeg"] {
   background-image: url(assets/sfondo_netflix.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 90vh; 
+  opacity: 0.3;
+  position: absolute;
+  height: 600px;
+  width: 1500px;
+}
+
+img[src="assets/Logonetflix.png"] {
+  color: #de0611;
 }
 
 .header {
@@ -44,12 +55,24 @@ img[src="assets/Logonetflix.png"]{
   margin-left: 30px;
 }
 
-.lingua {
-  justify-items: start;
+.scelta_lingua select{
+  background-color: black;
+  border: 8px 8px white;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 4px 4px 4px 4px;
+  font-size: inherit;
+  text-align: justify;
 }
 
 .accedi {
-   justify-items: flex-end;
+   background-color: #de0611;
+   color: white;
+   padding: 10px 20px;
+   border: #de0611;
+   border-radius: 4px 4px 4px 4px;
+   font-size: inherit;
+   text-align: justify;
 }
 
 .introduction {
