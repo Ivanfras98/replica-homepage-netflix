@@ -1,6 +1,6 @@
 :root {
-    --border-color:#222222;
-    --red-color:#de0611;
+  --border-color: #222222;
+  --red-color: #de0611;
 }
 * {
   margin: 0;
@@ -10,7 +10,79 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
+  color: white;
   background-color: black;
+  height: 100vh;
+}
+
+/*--------------------------Section_1--------------------------------*/
+
+.tv-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.tv-div {
+  grid-column: 1;
+  color: white;
+  margin-left: 32%;
+}
+.tv-div > h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.tv-div > p {
+  font-size: 24px;
+  line-height: 32px;
+}
+.tv {
+  grid-column: 2;
+  margin-right: 32%;
+}
+.tv > img {
+  width: 545px;
+}
+hr {
+  background-color: gray;
+  opacity: 0.3;
+  height: 7px;
+}
+
+/* -------------------Section Kids------------------- */
+
+.kids-section {
+  padding: 75px 45px;
+  border-top: 8px solid var(--border-color);
+}
+
+.kids-section .kids-profile {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+}
+
+.kids-profile .section-img {
+  width: 48%;
+  height: auto;
+}
+
+.section-img img {
+  width: 100%;
+  height: auto;
+}
+
+.kids-profile .kids-content {
+  display: inline-block;
+  width: 52%;
+  padding-left: 40px;
+  height: 100%;
 }
 /*Navbar CSS*/
 
@@ -98,31 +170,56 @@ img[src="assets/Logonetflix.png"]{
   margin: 0 auto;
 }
 
+/* -------------------Navbar CSS------------------- */
+
 /* Footer CSS */
+
+.kids-section .kids-profile div h2 {
+  font-size: 3.125rem;
+}
+
+.kids-section .kids-profile div p {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+/* -------------------Footer CSS------------------- */
+
 footer {
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
-  color: grey;
+  color: #757575;
   background-color: inherit;
   width: 100%;
-  height: 40%;
+  height: 30%;
 }
 
 .footer-panel {
   letter-spacing: 0;
-  display: block;
-  margin: 20px auto 0;
-  padding: 0 4%;
-  max-width: 960px;
+  margin: 0 auto;
+  padding: 75px 50px;
+  max-width: 1000px;
+  width: 90%;
 }
 
-.footer-panel p {
-  padding: 15px 0;
+.footer-panel p:first-child {
+  padding-bottom: 15px;
+}
+
+.footer-panel a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.footer-panel p a.issue-phone-number:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer-links {
   margin: 10px 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -138,95 +235,131 @@ footer {
   text-align: left;
   padding: 0;
 }
+
+.footer-links li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-panel p:last-child {
+  padding-top: 30px;
+  font-size: 12px;
+}
+
 div.lang-select {
-  padding: 10px;
-  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: inline-block;
   position: relative;
-  padding: 5px;
-  border: 1px solid grey;
-  border-radius: 5%;
-  background-color: black;
-  height: 30px;
-  width: 100px;
+  background-color: none;
 }
 .lang-select i {
   position: absolute;
-  top: 13%;
-  left: 7%;
+  top: 51%;
+  left: 10%;
+  transform: translateY(-50%);
 }
 .lang-select select {
-  position: absolute;
-  color: grey;
-  border: none;
-  background: black;
-  text-decoration: none;
-  top: 20%;
-  left: 30%;
+  padding: 16px 25px 16px 45px;
+  font-size: 16px;
+  color: #757575;
+  border: 1px solid #757575;
+  border-radius: 2px;
+  background-color: transparent;
+  appearance: none;
 }
-/* css faq */
+.lang-select select option {
+  background-color: black;
+}
 
+.lang-select i {
+  pointer-events: none;
+}
+
+.lang-select i svg {
+  width: 16px;
+  height: 16px;
+}
+.lang-select .arrow-down {
+  font-size: 0.7em;
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  cursor: default;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* css faq */
+.FAQ {
+  margin-bottom: 10px;
+}
 .wholefaq {
   display: flex;
-  border-bottom: 7px solid var(--border-color);
-  border-top: 7px solid #222222;
-  justify-content: center;
+  border-bottom: 8px solid var(--border-color);
+  border-top: 8px solid #222222;
+  flex-direction: column;
 }
 .faqh2 {
   color: white;
   font-weight: bolder;
   font-size: 50px;
   padding: 40px 0 50px;
-  position: relative;
-  left: 18%;
+  align-self: center;
 }
-.Answer , .Long_answer , .Short_answer {
+.wrapper-ul {
+  max-width: 815px;
+  align-self: center;
+}
+.Answer {
   margin-left: 0px;
-  height: 5em;
-  width: 50em;
+  height: 74.59px;
+  width: 95%;
   overflow: hidden;
   background-color: #303030;
   color: white;
-  margin-bottom: 0.5rem;
+  margin: auto;
+  margin-bottom: 10px;
   text-align: left;
   padding: 0%;
   position: relative;
+  font-size: 25px;
 }
 .Answer:hover {
-  height: 15em;
+  height: fit-content;
+  padding-bottom: 2em;
 }
-.Long_answer:hover {height: 18em;}
-.Short_answer:hover {height: 12em;}
+.Long_answer:hover {
+  height: fit-content;
+  padding-bottom: 2em;
+}
+.Short_answer:hover {
+  height: fit-content;
+  padding-bottom: 2em;
+}
 
-.FAQlist {
-  height: 3em;
-  width: 300px;
-  margin-left: 700px;
-  padding-inline-start: 0px;
+.FAQ_list {
+  display: inline;
+  height: 493px;
 }
+
 .visibletext {
-  font-weight: bold;
+  font-weight: 400;
   text-align: left;
-  margin-top: 15px;
-  font-size: large;
-  padding: 15px 20px 20px;
+  margin-top: 11px;
+  /* font-size: 25px; */
+  padding: 12px 32px 25px;
 }
 .visibletext:hover {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .hiddentext {
-  font-weight: 500;
-  padding: 0px 50px 0px 40px;
-  margin-top: 2em;
-}
-.hiddentext1 {
-  font-weight: 500;
+  font-weight: 400;
   padding: 0px 50px 0px 40px;
   margin-top: 1em;
+  /* font-size: 25px; */
 }
-.hiddentext6 {
-  font-weight: 500;
-  padding: 0px 50px 0px 40px;
-  margin-top: 2.5em;
+.FAQ_list li:first-child .hiddentext {
+  margin-top: 0.5em;
 }
 .emailform {
   display: flex;
@@ -234,26 +367,23 @@ div.lang-select {
   padding-bottom: 20px;
   position: relative;
   bottom: 20px;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 35px;
 }
 #email {
   height: 60px;
-  width: 32em;
   padding-left: 10px;
-  margin-left: 11%;
+  width: 65%;
 }
 #button {
-  margin-left: -5px;
-  height: 64px;
+  height: 60px;
   color: white;
   background-color: var(--red-color);
-  width: 170px;
+  width: 15%;
   font-weight: bolder;
   font-size: large;
-  position: relative;
-  top: 1px;
-  right: 1px;
+  border: none;
+  margin-left: 1px;
 }
 .plus {
   display: inline-block;
@@ -266,5 +396,117 @@ div.lang-select {
   color: white;
   margin-top: 50px;
   padding: 15px 0px 20px;
-  font-size: larger;
+  font-size: large;
+  text-align: center;
+}
+.svgplus {
+  display: inline-block;
+  position: absolute;
+  top: 21px;
+  right: 2.5%;
+}
+.form {
+  margin: auto;
+}
+.wrap2 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  max-width: 815px;
+}
+
+@media (max-width: 768px) {
+  .footer-panel {
+    padding:50px 18px 20px;
+    font-size: 13px;
+    max-width: unset;
+  }
+  
+.footer-panel p:first-child{
+  font-size: 1.2em;
+}
+
+  .footer-links li {
+    min-width: 11em;
+    padding-right: 10px;
+  }
+
+  .lang-select select {
+    padding: 14px 20px 14px 40px;
+    font-size: 13px;
+  }
+
+  .lang-select #footer-lang {
+    font-size: 1em;
+  }
+
+  .lang-select i .bi-bi-globe2 {
+    width: 12px;
+    height: 12px;
+  }
+  .Answer {
+    font-size: 20px;
+  }
+  .visibletext {
+    margin-top: 15px;
+  }
+
+  #button {
+    font-size: 12px;
+  }
+  .faqh2 {
+    font-size: 25px;
+  }
+
+  .kids-section .kids-profile {
+    width: calc(100%-40px);
+    flex-direction: column;
+  }
+  .kids-section .kids-profile div h2 {
+    padding-bottom: 18px;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  .kids-section .kids-profile div p {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .kids-section .kids-profile div {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+
+  .kids-profile .section-img {
+    width: 100%;
+  }
+
+  .kids-profile .kids-content {
+    padding-left: 0;
+    max-width:unset;
+    width: 95%;
+  }
+}
+
+@media (max-width: 360px) {
+  .kids-section .kids-profile div h2 {
+    font-size: 1.625rem;
+  }
+
+  .kids-section .kids-profile div p {
+    font-size: 1.125rem;
+  }
+
+  .kids-section {
+    padding: 55px 10px;
+  }
+  .Answer {
+    font-size: 18px;
+  }
+  .visibletext {
+    padding-left: 22px;
+    margin-top: 17px;
+  }
 }
