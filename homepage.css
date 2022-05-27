@@ -18,7 +18,7 @@ body {
 }
 
 button:hover {
-  cursor:pointer ;
+  cursor: pointer;
 }
 
 /*--------------------------Section_1--------------------------------*/
@@ -412,6 +412,10 @@ img[src="assets/Logonetflix.png"] {
   margin-left: 1px;
 }
 
+#button-header:hover {
+  cursor: pointer;
+  }
+
 .email-header-wrapper {
   display: flex;
   margin: auto;
@@ -508,7 +512,6 @@ img[src="assets/Logonetflix.png"] {
   width: 50%;
   margin: 0 auto;
   padding-bottom: 2%;
-
 }
 
 /* -------------------Footer CSS------------------- */
@@ -712,6 +715,10 @@ div.lang-select {
   border: none;
   margin-left: 1px;
 }
+
+#button:hover {
+  cursor: pointer;
+}
 .plus {
   display: inline-block;
   position: absolute;
@@ -757,15 +764,13 @@ div.lang-select {
   .email-header-wrapper {
     flex-direction: column;
     align-items: center;
-}
+  }
   #email-header {
     width: 70%;
   }
   .introduction h2 {
     font-size: 3.125rem;
   }
-
-  
 
   .introduction {
     margin-top: 3rem;
@@ -861,6 +866,7 @@ div.lang-select {
   }
 
   .rightCard {
+    min-width: unset;
     max-width: 100%;
     position: relative;
     max-height: 50%;
@@ -897,8 +903,7 @@ div.lang-select {
 }
 
 @media (max-width: 360px) {
-
-  .container .header{
+  .container .header {
     height: 70px;
   }
   .introduction h2 {
@@ -917,7 +922,7 @@ div.lang-select {
     width: fit-content;
     padding: 0 6px;
   }
-  
+
   .introduction h6 {
     font-size: 1.3rem;
   }
@@ -926,33 +931,33 @@ div.lang-select {
     font-size: 1rem;
   }
 
-  .container form{
+  .container form {
     padding-bottom: 20px;
   }
 
   .scelta_lingua {
-margin-right: 10px;
+    margin-right: 10px;
   }
 
   .scelta_lingua .bi-bi-globe2 {
     height: 15px;
-    left:4%;
-}
+    left: 4%;
+  }
 
-.scelta_lingua p {
-  font-size: 0.7rem;
-}
+  .scelta_lingua p {
+    font-size: 0.7rem;
+  }
 
   .header_lingua_accedi {
     margin-right: 5px;
-}
+  }
 
   .scelta_lingua select {
     padding: 10px 20px 10px 25px;
   }
   img[src="assets/Logonetflix.png"] {
     margin-left: 5px;
-}
+  }
   .kids-section .kids-profile div h2 {
     font-size: 1.625rem;
   }
