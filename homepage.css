@@ -19,23 +19,24 @@ body {
 
 /*--------------------------Section_1--------------------------------*/
 .tv-section {
-  width:95%;
-  margin:0 auto;
-  max-width:1100px;
-  overflow:hidden;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1100px;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items:center;
-  position:relative;
-  padding:45px 0;
+  align-items: center;
+  position: relative;
+  padding: 45px 0;
   /* margin-top: 50px;
   gap:90px; */
 }
 .tv-div {
   grid-column: 1;
   color: white;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
+
 .tv-div > h2 {
   font-size: 45px;
   margin: 0 auto;
@@ -46,54 +47,54 @@ body {
   line-height: 32px;
 }
 .contenitore-tv {
-  display:flex;
-  -webkit-box-flex:0;
+  display: flex;
+  -webkit-box-flex: 0;
   flex: 0 1 auto;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 .tv {
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .tv img {
-  max-width:100%;
-  height:auto;
-  border:0;
-  z-index:2;
-  position:relative;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  z-index: 2;
+  position: relative;
 }
-.animazione-tv{
-  width:100%;
-  height:100%;
-  max-width:73%;
-  max-height:54%;
-  position:absolute;
-  top:20%;
-  left:13%;
+.animazione-tv {
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 20%;
+  left: 13%;
   transform: translate (-50%, -50%);
 }
 .tv-video {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 hr {
   background-color: gray;
   opacity: 0.3;
   height: 7px;
-  border:none;
+  border: none;
 }
-@media screen and (max-width:949px) {
+@media screen and (max-width: 768px) {
   .tv-section {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
   }
   .tv-div {
-    padding-top:45px;
-    text-align:center;
-    width:90vw;
+    padding-top: 45px;
+    text-align: center;
+    width: 90vw;
   }
   .tv-div > h2 {
     font-size: 34px;
@@ -103,12 +104,11 @@ hr {
     line-height: 25px;
   }
   .tv img {
-    max-width:100%;
-    height:auto;
-    border:0;
+    max-width: 100%;
+    height: auto;
+    border: 0;
   }
 }
-
 
 /*-------------------Section 2 CSS----------------*/
 
@@ -213,21 +213,21 @@ hr {
 
 /* -------------------Section 3------------------- */
 .apple-section {
-  width:95%;
-  margin:0 auto;
-  max-width:1100px;
-  overflow:hidden;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1100px;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items:center;
-  position:relative;
-  margin-top: 50px;
-  gap:90px;
+  align-items: center;
+  position: relative;
+  padding: 50px 0;
+  gap: 90px;
 }
 .apple-div {
   grid-column: 1;
   color: white;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 .apple-div > h2 {
   font-size: 45px;
@@ -239,74 +239,74 @@ hr {
   line-height: 32px;
 }
 .contenitore-apple {
-  display:flex;
-  -webkit-box-flex:0;
+  display: flex;
+  -webkit-box-flex: 0;
   flex: 0 1 auto;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 .apple {
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .apple img {
-  max-width:100%;
-  height:auto;
-  border:0;
-  z-index:2;
-  position:relative;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  z-index: 2;
+  position: relative;
 }
-.animazione-apple{
-  width:62%;
-  height:100%;
-  max-width:73%;
-  max-height:54%;
-  position:absolute;
-  top:6%;
-  left:18%;
+.animazione-apple {
+  width: 62%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 6%;
+  left: 18%;
   transform: translate (-50%, -50%);
 }
 .apple-video {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 hr {
   background-color: gray;
   opacity: 0.3;
   height: 7px;
-  border:none;
+  border: none;
 }
-@media screen and (max-width:949px) {
+@media screen and (max-width: 768px) {
   .apple-section {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
   }
   .apple-div {
-    text-align:center;
-    width:90vw;
+    text-align: center;
+    width: 90vw;
   }
   .apple-div > h2 {
     font-size: 34px;
     margin-bottom: 10px;
-    min-width:none;
+    min-width: none;
   }
   .apple-div > p {
     font-size: 19px;
     line-height: 25px;
   }
   .apple img {
-    max-width:100%;
-    height:auto;
-    border:0;
+    max-width: 100%;
+    height: auto;
+    border: 0;
   }
 }
 
 /* -------------------Section Kids------------------- */
 
 .kids-section {
-  padding: 75px 45px;
+  padding: 55px 45px;
   border-top: 8px solid var(--border-color);
 }
 
@@ -346,35 +346,43 @@ hr {
   font-weight: 400;
 }
 
-
 /* -------------------Navbar CSS------------------- */
 
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 55vh;
-  z-index: 0;
+  /* height: 60%; */
+  /* z-index: 1; */
+  position: relative;
+  text-shadow: 1px 1px 1px black;
+  min-height: 60vh;
 }
 /* .imgwrap {
   display: flex;
   height: ;
 } */
 img[src="assets/sfondo_netflix.jpeg"] {
-  background-image: url(assets/sfondo_netflix.png); 
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,1), rgba(0,0,0,0.2));
+  background-image: url(assets/sfondo_netflix.png);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1)
+  );
   -webkit-mask-repeat: no-repeat;
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
   position: absolute;
   width: 100%;
-  height: 55vh;
+  height: 100%;
+  /* height: 55vh; */
   z-index: -1;
 }
 .pmail2 {
   color: white;
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 15px 0px 20px;
   font-size: large;
   text-align: center;
@@ -388,7 +396,7 @@ img[src="assets/Logonetflix.png"] {
   padding-left: 10px;
 }
 
-#button-header{
+#button-header {
   height: 60px;
   color: white;
   background-color: var(--red-color);
@@ -401,7 +409,7 @@ img[src="assets/Logonetflix.png"] {
 
 .email-header-wrapper {
   display: flex;
-  margin:auto;
+  margin: auto;
   justify-content: center;
   max-width: 815px;
 }
@@ -412,6 +420,7 @@ img[src="assets/Logonetflix.png"] {
   margin: 0 auto;
   padding-top: 30px;
   width: 100%;
+  max-width: 1440px;
   height: 100px;
   justify-content: space-between;
 }
@@ -474,7 +483,7 @@ img[src="assets/Logonetflix.png"] {
 .introduction {
   width: 60%;
   color: white;
-  margin: 0 auto;
+  margin: 2.5rem auto 0;
   text-align: center;
 }
 
@@ -482,18 +491,20 @@ img[src="assets/Logonetflix.png"] {
   font-size: 3.625rem;
   font-weight: 600;
   margin-bottom: 25px;
+  line-height: 1.1;
 }
 
 .introduction h6 {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .container form {
   width: 50%;
   margin: 0 auto;
-}
+  padding-bottom: 1rem;
 
+}
 
 /* -------------------Footer CSS------------------- */
 
@@ -727,9 +738,40 @@ div.lang-select {
 }
 
 @media (max-width: 768px) {
-  #button-header {font-size: medium;}
-  img[src="assets/sfondo_netflix.jpeg"] {
-    height: 610px;
+  .container {
+    overflow-y: hidden;
+  }
+
+  .pmail2 {
+    margin-top: 1rem;
+  }
+
+  .container form {
+    width: 90%;
+  }
+  .email-header-wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+  #email-header {
+    width: 70%;
+  }
+  .introduction h2 {
+    font-size: 3.125rem;
+  }
+
+  
+
+  .introduction {
+    margin-top: 3rem;
+    line-height: 0.9;
+    width: 90%;
+  }
+
+  #button-header {
+    font-size: medium;
+    margin-top: 1rem;
+    height: 40px;
   }
 
   .footer-panel {
@@ -826,9 +868,11 @@ div.lang-select {
     line-height: 1.1;
     margin-bottom: 0.5rem;
     align-self: center;
+    text-align: center;
   }
 
   .rightCard > h2 {
+    text-align: center;
     font-size: 1.25rem;
     align-self: center;
   }
@@ -848,19 +892,63 @@ div.lang-select {
   }
 }
 
-@media (max-width: 360px){
-  .introduction h2 {font-size: 30px;}
-  .introduction h6 {font-size: 15px;}
+@media (max-width: 360px) {
+
+  .container .header{
+    height: 70px;
+  }
+  .introduction h2 {
+    font-size: 30px;
+  }
+  .introduction h6 {
+    font-size: 15px;
+  }
   #email-header {
-    height:40px;
+    height: 40px;
+    width: 90%;
+  }
+  #button-header {
+    font-size: 0.7rem;
+    height: 40px;
     width: fit-content;
+    padding: 0 6px;
   }
-  #button-header { height: 40px;
-  width: fit-content;
-font-size: medium; }
-  img[src="assets/sfondo_netflix.jpeg"] {
-    height: 490px;
+  
+  .introduction h6 {
+    font-size: 1.3rem;
   }
+
+  .container form .pmail2 {
+    font-size: 1rem;
+  }
+
+  .container form{
+    padding-bottom: 20px;
+  }
+
+  .scelta_lingua {
+margin-right: 10px;
+  }
+
+  .scelta_lingua .bi-bi-globe2 {
+    height: 15px;
+    left:4%;
+}
+
+.scelta_lingua p {
+  font-size: 0.7rem;
+}
+
+  .header_lingua_accedi {
+    margin-right: 5px;
+}
+
+  .scelta_lingua select {
+    padding: 10px 20px 10px 25px;
+  }
+  img[src="assets/Logonetflix.png"] {
+    margin-left: 5px;
+}
   .kids-section .kids-profile div h2 {
     font-size: 1.625rem;
   }
@@ -928,10 +1016,10 @@ font-size: medium; }
     margin-bottom: 4px;
   }
   .pmail2 {
-  color: white;
-  margin-top: 20px;
-  padding: 15px 0px 20px;
-  font-size: large;
-  text-align: center;
-}
+    color: white;
+    margin-top: 20px;
+    padding: 15px 0px 20px;
+    font-size: large;
+    text-align: center;
+  }
 }
