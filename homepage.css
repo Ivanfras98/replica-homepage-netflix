@@ -27,7 +27,7 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items:center;
   position:relative;
-  margin-top: 50px;
+  padding:45px 0;
 }
 .tv-div {
   grid-column: 1;
@@ -88,7 +88,7 @@ hr {
     align-items:center;
   }
   .tv-div {
-    padding-top:70px;
+    padding-top:45px;
     text-align:center;
   }
   .tv-div > h2 {
@@ -258,8 +258,8 @@ hr {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: fit-content;
-  padding-bottom: 30px;
+  height: 55vh;
+  z-index: 0;
 }
 /* .imgwrap {
   display: flex;
@@ -274,7 +274,7 @@ img[src="assets/sfondo_netflix.jpeg"] {
   object-fit: cover;
   position: absolute;
   width: 100%;
-  height: 52vh;
+  height: 55vh;
   z-index: -1;
 }
 .pmail2 {
