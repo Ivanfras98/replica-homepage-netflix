@@ -368,10 +368,7 @@ hr {
   text-shadow: 1px 1px 1px black;
   min-height: 60vh;
 }
-/* .imgwrap {
-  display: flex;
-  height: ;
-} */
+
 img[src="assets/sfondo_netflix.jpeg"] {
   background-image: url(assets/sfondo_netflix.png);
   -webkit-mask-image: linear-gradient(
@@ -492,7 +489,7 @@ img[src="assets/Logonetflix.png"] {
 .introduction {
   width: 60%;
   color: white;
-  margin: 2.5rem auto 0;
+  margin: 7.5% auto 0;
   text-align: center;
 }
 
@@ -511,7 +508,7 @@ img[src="assets/Logonetflix.png"] {
 .container form {
   width: 50%;
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding-bottom: 2%;
 
 }
 
