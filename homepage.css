@@ -17,6 +17,10 @@ body {
   height: 100vh;
 }
 
+button:hover {
+  cursor:pointer ;
+}
+
 /*--------------------------Section_1--------------------------------*/
 .tv-section {
   width: 95%;
@@ -35,6 +39,12 @@ body {
   grid-column: 1;
   color: white;
   box-sizing: border-box;
+}
+
+.rightCard h1 {
+  font-size: 45px;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .tv-div > h2 {
@@ -377,7 +387,6 @@ img[src="assets/sfondo_netflix.jpeg"] {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* height: 55vh; */
   z-index: -1;
 }
 .pmail2 {
@@ -790,7 +799,7 @@ div.lang-select {
   }
 
   .lang-select select {
-    padding: 14px 20px 14px 40px;
+    padding: 14px 20px 14px 35px;
     font-size: 13px;
   }
 
